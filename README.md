@@ -11,6 +11,8 @@ Configuration for i3 in my PC/personal system at Arch Gnu/Linux.
 
 My nickname is Max, Programming language developer, Full-stack programmer. I love computer scientists, researchers, and compilers. ([Max Base](https://maxbase.org/))
 
+Thanks to gasem for `other/` directory.
+
 ## Asrez Team
 
 A team includes some programmer, developer, designer, researcher(s) especially Max Base.
