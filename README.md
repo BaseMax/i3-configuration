@@ -3,7 +3,7 @@
 Configuration for i3 in my PC/personal system at Arch Gnu/Linux.
 
 - Upload **config** file to `~/.config/i3/config`
-- Upload **.i3blocks.conf** fiel to `~/.i3blocks.conf`
+- Upload **.i3blocks.conf** file to `~/.i3blocks.conf`
 
 ---------
 
