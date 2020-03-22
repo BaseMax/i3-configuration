@@ -5,7 +5,17 @@ Configuration for i3 in my PC/personal system at Arch Gnu/Linux.
 - Upload **config** file to `~/.config/i3/config`
 - Upload **.i3blocks.conf** file to `~/.i3blocks.conf`
 
-## My Font
+
+## Features
+
+- Support English And persian language in i3 (US, and Iran)
+- Custom workspace (with name)
+- Custom font
+- Style for windows
+- My personal shortcodes for chromium, firefox, subl3, telegram-desktop and others...
+- Move all chromium and firefox software to browser workspace, ...
+
+## i3 font
 
 ![vazir font - A Persian (Farsi) Font](https://raw.githubusercontent.com/rastikerdar/vazir-font/master/sample.png)
 
