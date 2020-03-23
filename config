@@ -9,11 +9,11 @@ set $mod Mod4
 font pango:Vazir 10
 
 # Work spaces VAR
-  set $workspace1 "1: Telegram "
+  set $workspace1 "1: Chat "
   set $workspace2 "2: Browser "
   set $workspace3 "3: Coding "
   set $workspace4 "4: FileManager "
-  set $workspace5 "5: VirtualMachine  "
+  set $workspace5 "5: VM  "
   set $workspace6 "6: Media "
   set $workspace7 "7"
   set $workspace8 "8"
@@ -26,10 +26,14 @@ font pango:Vazir 10
 assign [class="Telegram"] $workspace1
 assign [class="Firefox"] $workspace2
 assign [class="Chromium"] $workspace2
+assign [class="Sublime Text"] $workspace3
+assign [class="Subl3"] $workspace3
 assign [class="Spyder"] $workspace3
+assign [class="Pcmanfm"] $workspace4
 assign [class="Thunar"] $workspace4
 assign [class="VirtualBox"] $workspace5
 assign [class="Vlc"] $workspace6
+assign [class="MPlayer"] $workspace6
 
 # Floating modifier
 floating_modifier $mod
@@ -132,8 +136,7 @@ bindsym $mod+F1 exec chromium --no-sandbox
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec subl3
 bindsym $mod+F4 exec telegram-desktop
-
-
+bindsym $mod+F5 exec pcmanfm
 
 # Reload configuration
 bindsym $mod+Shift+c reload
@@ -212,10 +215,12 @@ exec --no-startup-id feh --bg-fill $HOME/Desktop/antelope-canyon-gionee-stock-25
 exec --no-startup-id setxkbmap -layout us,ir -option 'grp:alt_shift_toggle'
 exec_always compton -b
 exec --no-startup-id parcellite
-exec --no-startup-id jupyter-notebook
+#exec --no-startup-id jupyter-notebook
 exec --no-startup-id chromium --no-sandbox
+exec --no-startup-id firefox
 exec --no-startup-id subl3
 exec --no-startup-id telegram-desktop
+exec --no-startup-id pcmanfm
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set 'Master' 5%+
