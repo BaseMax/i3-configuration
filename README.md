@@ -14,7 +14,7 @@ Configuration for i3 in my PC/personal system at Arch Gnu/Linux.
 - Style for windows
 - My personal shortcodes for chromium, firefox, subl3, telegram-desktop and others...
 - Move all chromium and firefox software to browser workspace, ...
-- Print screen with `prt key` and print single windows with `shift+prt key` using `$ scrot`
+- Print screen with `shift+prt key` and print single windows with `prt key` using `$ scrot`
 
 ## i3 font
 
