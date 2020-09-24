@@ -8,7 +8,8 @@ Configuration for i3 in my PC/personal system at Arch Gnu/Linux.
 
 ## Features
 
-- Support English And persian language in i3 (US, and Iran)
+- Keep a socks5 tunnel via ssh in background alive
+- Support English And persian language in i3 (US, and Farsi:Persian)
 - Custom workspace (with name)
 - Custom font
 - Style for windows
