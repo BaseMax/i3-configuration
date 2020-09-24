@@ -9,31 +9,42 @@ set $mod Mod4
 font pango:Vazir 10
 
 # Work spaces VAR
-  set $workspace1 "1: Chat "
-  set $workspace2 "2: Browser "
-  set $workspace3 "3: Coding "
-  set $workspace4 "4: FileManager "
-  set $workspace5 "5: VM  "
-  set $workspace6 "6: Media "
-  set $workspace7 "7"
-  set $workspace8 "8"
-  set $workspace9 "9"
+#  set $workspace1 "1: Chat "
+#  set $workspace2 "2: Browser "
+#  set $workspace3 "3: Coding "
+#  set $workspace4 "4: FileManager "
+#  set $workspace5 "5: VM  "
+#  set $workspace6 "6: Media "
+  set $workspace1 "1: Main"
+  set $workspace2 "2: Chat"
+  set $workspace3 "3: Browser"
+  set $workspace4 "4: Programming"
+  set $workspace5 "5: File Manager"
+  set $workspace6 "6: Virtual Machines"
+  set $workspace7 "7: Media"
+  set $workspace8 "8: File Server"
+  set $workspace9 "9: Server"
   set $workspace10 "10"
 
 
 
+assign [class="FileZilla"] $workspace8
+assign [class="filezilla"] $workspace8
+assign [class="fileZilla"] $workspace8
+assign [class="Filezilla"] $workspace8
 # Programs run as which Workspace
-assign [class="Telegram"] $workspace1
-assign [class="Firefox"] $workspace2
-assign [class="Chromium"] $workspace2
-assign [class="Sublime Text"] $workspace3
-assign [class="Subl3"] $workspace3
-assign [class="Spyder"] $workspace3
-assign [class="Pcmanfm"] $workspace4
-assign [class="Thunar"] $workspace4
-assign [class="VirtualBox"] $workspace5
-assign [class="Vlc"] $workspace6
-assign [class="MPlayer"] $workspace6
+assign [class="Telegram"] $workspace2
+assign [class="firefox"] $workspace3
+assign [class="Chromium"] $workspace3
+assign [class="Sublime Text"] $workspace4
+assign [class="Subl3"] $workspace4
+assign [class="Spyder"] $workspace4
+assign [class="Pcmanfm"] $workspace5
+assign [class="Thunar"] $workspace5
+assign [class="VirtualBox"] $workspace6
+assign [class="Vlc"] $workspace7
+assign [class="vlc"] $workspace7
+assign [class="MPlayer"] $workspace7
 
 # Floating modifier
 floating_modifier $mod
@@ -211,20 +222,27 @@ bar {
 # For Window ...
 new_window pixel 1
 #for_window [class="Telegram"] floating enable; resize shrink width 10000px; resize grow width 300px; resize shrink height 500px; resize grow height 400px;
+for_window [class="xfce4-terminal"] floating enable; resize shrink width 10000px; resize grow width 300px; resize shrink height 500px; resize grow height 400px;
 
 
 # Startup programs
 #exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill $HOME/Desktop/antelope-canyon-gionee-stock-2560-1600.jpg
+exec --no-startup-id feh --bg-fill $HOME/Pictures/background.jpg
 exec --no-startup-id setxkbmap -layout us,ir -option 'grp:alt_shift_toggle'
 exec_always compton -b
-exec --no-startup-id parcellite
-#exec --no-startup-id jupyter-notebook
-exec --no-startup-id chromium --no-sandbox
+exec --no-startup-id chromium
 exec --no-startup-id firefox
 exec --no-startup-id subl3
 exec --no-startup-id telegram-desktop
-exec --no-startup-id pcmanfm
+exec --no-startup-id thunar
+exec --no-startup-id bash .socks.sh
+exec --no-startup-id xfce4-terminal -e "htop" && "/bin/bash"
+
+exec --no-startup-id virtualbox
+exec --no-startup-id filezilla
+exec --no-startup-id vlc
+
+
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set 'Master' 5%+
