@@ -1,6 +1,6 @@
-# i3-configuration
+# linux-i3-configuration
 
-Configuration for i3 in my PC/personal system at Arch Gnu/Linux.
+Configuration for i3 in my PC/personal system at **Arch Gnu/Linux**.
 
 - Upload **config** file to `~/.config/i3/config`
 - Upload **.i3blocks.conf** file to `~/.i3blocks.conf`
