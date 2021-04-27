@@ -19,8 +19,6 @@ Configuration for i3 in my PC/personal system at **Arch Gnu/Linux**.
 
 ## i3 font
 
-![vazir font - A Persian (Farsi) Font](https://raw.githubusercontent.com/rastikerdar/vazir-font/master/sample.png)
-
 [A Persian (Farsi) Font - قلم (فونت) فارسی وزیر](https://github.com/rastikerdar/vazir-font)
 
 ---------
